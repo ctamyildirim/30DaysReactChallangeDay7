@@ -1,0 +1,32 @@
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/ace-cards-dice-casino-background_1017-32726.jpg?w=1380&t=st=1662295380~exp=1662295980~hmac=96cb2a9c899aecaf54c72d98c356e95b6f67c2875119db50c9c3144f8dcb9fc7');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: zapping 60s ease-in-out infinite;
+    animation-fill-mode: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes zapping {
+    0% {background-image: url('https://img.freepik.com/free-vector/ace-cards-dice-casino-background_1017-32726.jpg?w=1380&t=st=1662295380~exp=1662295980~hmac=96cb2a9c899aecaf54c72d98c356e95b6f67c2875119db50c9c3144f8dcb9fc7');}
+    50% {background-image: url('https://images7.alphacoders.com/301/thumb-1920-301522.jpg');}
+    100% {background-image: url('https://img.freepik.com/free-vector/ace-cards-dice-casino-background_1017-32726.jpg?w=1380&t=st=1662295380~exp=1662295980~hmac=96cb2a9c899aecaf54c72d98c356e95b6f67c2875119db50c9c3144f8dcb9fc7');}
+
+}
+
+
+.board{
+    overflow: hidden;
+    width: 75%;
+    aspect-ratio: 16/8;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 25px 50px 0 rgba(255, 255, 255, 0.45);
+    border-radius: 4rem;
+    padding: 20px;
+}
